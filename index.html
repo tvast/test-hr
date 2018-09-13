@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="topbar">
-    <nav>
+    <nav id="myHeader" class="header">
       <h1 id="logo" class="mainTitle">Blogly</h1>
       <br/>
       <ul>
@@ -23,6 +23,7 @@
           <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
             <button id="changeButton" class="changeBut">Change website name</button>
+
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -115,7 +116,40 @@
       <img class="imageFlex" src="assets/4.png">
   </div>
 
+  <div class="wrapper">
+  <img width="20%" class="mySlides" src="assets/1.png" style="width:100%">
+  <img width="20%" class="mySlides" src="assets/2.png" style="width:100%">
+  <img width="20%" class="mySlides" src="assets/3.png" style="width:100%">
+  <img width="20%" class="mySlides" src="assets/4.png" style="width:100%">
 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class="wrapper">
+  <button class="button" id="myBtn">I would like some feedback</button>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="assets/cat.gif">
+    <h1>Please ;)</h1>
+  </div>
+
+</div>
+
+<div class="wrapper footer">
+   <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+        
+      </ul>
+</div>
 
   
 
