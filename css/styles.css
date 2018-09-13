@@ -129,10 +129,20 @@ background-color: purple;
 display: inline
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
 @media screen and (max-width: 992px) {
    .contentLeft {
 float: left;
-width: 70%;
+width: 100%;
 background-color: lightblue;
 display: block;
 
@@ -140,7 +150,7 @@ display: block;
 
 .sideBar {
 float: right;
-width: 30%;
+width: 100%;
 background-color: purple;
 display: block;
 }
@@ -162,3 +172,4 @@ background-color: purple;
 display: none;
 }
 }
+
