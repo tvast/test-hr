@@ -97,36 +97,54 @@ input, select {
 
 
 /*Style document*/
+
+.mainTitle {
+	font-family: 'EB Garamond', serif;
+	font-size: 5em;
+}
+h1 {
+	font-family: 'EB Garamond', serif;
+	font-size: 3em;
+}
+
+p, li, auto {
+	font-family: 'Ubuntu', sans-serif;
+}
+
 .topbar {
 width: 100%;
 height: 10%;
-background-color:tomato;
+
 margin: 0 auto;
 padding :1%;
 text-align: center;
+
+border-bottom: black solid 1px
 }
 
 .wrapper {
 
 	margin-left:10%;
 	margin-right:10%;
-	background-color: lightblue
+
+
 
 }
 
 .contentLeft {
 float: left;
-width: 70%;
-background-color: lightblue;
-display: inline
+width: 65%;
+display: inline;
+padding: 15px;
 
 }
 
 .sideBar {
 float: right;
-width: 30%;
-background-color: purple;
-display: inline
+width: 25%;
+display: inline;
+padding: 15px;
+border: solid black 1px;
 }
 
 ul {
@@ -137,39 +155,127 @@ ul {
 
 li {
     display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+p {
+	padding: 15px;
 }
 
+span {
+	margin: 30px;
+}
+
+form {
+	padding: 15px;
+}
+
+textarea {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+}
+
+a:hover {
+	color : tomato;
+}
+
+.chips {
+	background-color: grey;
+	
+	display: inline;
+	margin: 15px;
+	padding: 10px.
+}
+
+.alignInput {
+	display: inline;
+}
+
+.imageFlex {
+	width: 10%;
+	padding: 10px;
+}
+
+.thumBnail {
+	display: inline;
+}
+
+
+/* Style The Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 @media screen and (max-width: 992px) {
    .contentLeft {
 float: left;
 width: 100%;
-background-color: lightblue;
 display: block;
 
 }
-
 .sideBar {
 float: right;
 width: 100%;
-background-color: purple;
 display: block;
 }
-}
 
+.thumBnail {
+	display: block;
+}
+}
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
     .contentLeft {
 float: left;
 width: 100%;
-background-color: lightblue;
-
 }
-
 .sideBar {
 float: right;
 width: 100%;
-background-color: purple;
 display: none;
+}
+
+.thumBnail {
+	display: block;
 }
 }
 
