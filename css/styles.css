@@ -87,12 +87,19 @@ hr {
 	height:1px;
 	border:0;   
 	border-top:1px solid #cccccc;
-	margin:1em 0;
+	margin:0 auto;
 	padding:0;
+	width: 50%;
+	vertical-align: center;
 }
 
 input, select {
 	vertical-align:middle;
+}
+
+div {
+	margin: 10px;
+	padding :10px;
 }
 
 
@@ -119,7 +126,7 @@ p, li, auto {
 	padding :1%;
 	text-align: center;
 
-	border-bottom: black solid 1px
+
 }
 
 .wrapper {
@@ -232,13 +239,16 @@ input[type=submit]:hover {
 }
 
 .imageFlex {
-	width: 10%;
+	
 	padding: 10px;
 	border-radius: 4px;
+
 }
 
 .thumBnail {
-	display: inline;
+	
+	display: flex;
+	align-items:center;
 }
 
 
@@ -342,9 +352,12 @@ margin-right: 30%
 .button:hover {
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+	
 
-
-.mySlides {display:none;}
+.mySlides {
+  display:none;
+  width: 50%;
+}
 
 /* Style The Dropdown Button */
 
